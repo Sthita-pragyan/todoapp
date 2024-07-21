@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Todo from "./components/Todo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="mini bg-light m-auto shadow-lg p-3 mb-5 bg-white rounded fw-bold">
+        <p className="heading"> Today Plan's</p>
+        <div className="d-flex justify-content-center">
+          <div className="p-3">
+            <Todo />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
